@@ -1,0 +1,88 @@
+﻿body {
+    background-color: grey;
+}
+
+div#oldal {
+    border: 3px solid green;
+    border-radius: 15px 0;
+    margin: 20px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+div#tudnivalok {
+    margin: 15px;
+    border: 3px solid red;
+    border-radius: 15px 0;
+    padding: 20px;
+    background-color: cornflowerblue;
+}
+
+div#tanulmanyaim {
+    margin: 15px;
+    border: 3px solid aqua;
+    border-radius: 15px 0;
+    padding: 20px;
+    background-color: lawngreen;
+    text-align: right;
+}
+
+span {
+    font-size: 20px;
+    font-style: italic;
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+p.szin {
+    color: moccasin;
+    text-align: justify;
+}
+
+img {
+    float: right;
+    width: 100px;
+    height: 120px;
+    margin-left: 15px;
+    border: 2px solid blue;
+}
+
+div#felsorolas1 {
+    border: 2px solid blue;
+    border-radius: 15px;
+    width: 30%;
+    background-color: lightgrey;
+    color: blue;
+}
+
+div#felsorolas2 {
+    border: 2px solid blue;
+    border-radius: 15px;
+    width: 20%;
+    background-color: lightgrey;
+    color: red;
+    font-style: italic;
+}
+
+a {
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: darkgoldenrod;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+a:hover {
+    border: 2px solid darkgoldenrod;
+    background-color: blue;
+    color: magenta;
+}
