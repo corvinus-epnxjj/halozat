@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nextQuestion = parseInt(localStorage.getItem("nextQuestion"));
     }
 
-    if (hotList.length === 0) {
+    if (!localStorage.getItem("hotList")) {
         for (let i = 0; i < questionsInHotList; i++) {
             kerdesBetoltes(nextQuestion, i);
             nextQuestion++;

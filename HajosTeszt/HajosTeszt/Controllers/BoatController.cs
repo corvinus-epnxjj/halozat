@@ -56,8 +56,8 @@ namespace HajosTeszt.Controllers
         {
             hajostesztContext context = new hajostesztContext();
             var kérdés = (from x in context.Questions
-                            orderby x.QuestionId descending
-                            select x).LastOrDefault();
+                          orderby x.QuestionId descending
+                          select x).LastOrDefault();
 
             if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
 
@@ -85,9 +85,9 @@ namespace HajosTeszt.Controllers
         {
             hajostesztContext context = new hajostesztContext();
             var kérdésElőző = (from x in context.Questions
-                             where sorszam > x.QuestionId
-                             orderby x.QuestionId descending
-                             select x).FirstOrDefault();
+                               where sorszam > x.QuestionId
+                               orderby x.QuestionId descending
+                               select x).FirstOrDefault();
 
             if (kérdésElőző == null) return M3();
 
