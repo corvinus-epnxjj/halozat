@@ -11,7 +11,7 @@
             <input id="jokeText" type="text" placeholder="Csak PC vicc" />
         </div>
         <button id="addButton">Új vicc felvétele</button>
-        <div id="viccek">Viccek</div>
+        <div id="viccek"></div>
     </form>
     <script>
         document.getElementById("addButton").addEventListener("click", () => {
@@ -51,7 +51,9 @@
                     }
                 })
                 .then(data => {
-                    document.getElementById("viccek").innerText = data.jokeText
+                    for (var i = 0; i < data.length; i++) {
+                        document.getElementById("viccek").innerHTML += data[i].jokeText += "<br/>"
+                    }
                 })
         }
 
