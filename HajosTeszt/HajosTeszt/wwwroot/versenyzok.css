@@ -1,0 +1,185 @@
+﻿input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid green;
+    -webkit-text-fill-color: green;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 8vw;
+    background-color: darkcyan;
+    color: white;
+    font-size: 1.5vmax;
+    font-family: 'Audiowide', cursive;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1#header {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8vw;
+    text-align: center;
+}
+
+article div#paros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: darkblue;
+    color: white;
+    height: 7vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2vmax;
+}
+
+article div#paratlan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: khaki;
+    color: black;
+    height: 7vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2vmax;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 15vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form#addForm {
+    width: 60%;
+    background-color: black;
+}
+
+form#removeForm {
+    width: 40%;
+    background-color: grey;
+}
+
+div#addButton {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div#removeButton {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.rendezes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.adatok {
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    height: 3vmax;
+    border: 2px solid darkcyan;
+    background-color: khaki;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1vmax;
+}
+
+.button {
+    border-radius: 5px;
+    height: 4vmax;
+    width: 12vw;
+    border: 2px solid blue;
+    background-color: darkcyan;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1vmax;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 2px solid darkcyan;
+    background-color: blue;
+    color: lightgreen;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 8vw;
+    width: 100%;
+    background-color: darkslateblue;
+    color: white;
+    font-size: 1vmax;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+
+p.footer {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.igazitas {
+    text-align: center;
+}
+
+.error {
+    color: darkred;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1vmax;
+    padding-top: 1vw;
+}

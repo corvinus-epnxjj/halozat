@@ -6,20 +6,20 @@
 </head>
 <body>
     <form>
-        <div id="jokeList"></div>
         <div>
             <input id="jokeText" type="text" placeholder="Csak PC vicc" />
         </div>
         <button id="addButton">Új vicc felvétele</button>
+        <hr />
         <div id="viccek"></div>
     </form>
     <script>
         document.getElementById("addButton").addEventListener("click", () => {
             let data = {
-                jokeText: document.getElementById("jokeText").value
+                JokeText: document.getElementById("jokeText").value
             }
 
-            fetch('api/jokes',
+            fetch(`/api/jokes`,
                 {
                     method: 'POST',
                     headers: {
@@ -40,7 +40,7 @@
         });
 
         function ViccBetoltes() {
-            fetch('api/jokes')
+            fetch(`/api/jokes`)
                 .then(result => {
                     if (!result.ok) {
                         console.error(`Hibás letöltés: ${result.status}`);

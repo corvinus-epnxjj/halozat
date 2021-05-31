@@ -1,0 +1,8 @@
+Számítógép-hálózatok beadandó:
+
+Adatbázis: Azure SQL Database
+Hozzáférés: szerver: szamhalo.database.windows.net, felhasználónév: isti, jelszó: A1b2c3d4, adatbázis: Drivers
+Fájlok: versenyzok.html, versenyzok.css, versenyzok.js
+Mappák: DriversModels, Controllers/DriverController
+
+Készítette: Szorcsik István - EPNXJJ
